@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/sass/normalize";
+@font-face {
+  font-family: 'AlicorpSans-Regular';
+  src: url('./assets/fonts/AlicorpSans-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'AlicorpSans-Bold';
+  src: url('./assets/fonts/AlicorpSans-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'AlicorpSans-Semibold';
+  src: url('./assets/fonts/AlicorpSans-SemiBold.otf') format('opentype');
+}

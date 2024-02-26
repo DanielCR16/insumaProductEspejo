@@ -1,0 +1,101 @@
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fcfcfc;
+  box-shadow: 0 6px 10px #0000000d;
+  z-index: 10;
+  padding: 0 1rem;
+  border-bottom: 1px solid #dedede;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header__icons {
+  display: flex;
+}
+.header__search-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0.25rem;
+  height: 2.5rem;
+  width: 60%;
+  max-width: 68.25rem;
+}
+.search-group__container {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  padding: 0 16px;
+  overflow: clip;
+  width: 100%;
+}
+[role=button] {
+  cursor: pointer;
+}
+[class^=dli-], [class*=dli-] {
+  display: inline-flex;
+}
+.dl-icon-md {
+  font-size: 24px;
+}
+.search-group__container__search_icon {
+  color: #ec3a0e;
+}
+.dl-icon {
+  font-family: dali-icons!important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  speak: never;
+  text-transform: none;
+}
+.dl-form-control-container {
+  padding-bottom: 16px;
+  position: relative;
+}
+.search-group__container>.dl-form-control-container {
+  width: 100%;
+  padding: 0;
+}
+.dl-form-control-container .dl-input-icon-left, .dl-form-control-container .dl-input-icon-right {
+  position: relative;
+}
+
+@media screen and (max-width: 1169px){
+  .header {
+    min-height: 4rem;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width: 880px){
+  .header {
+    padding: 0 8px;
+}
+.header__search-container {
+  border-right: 1px solid #dedede;
+  margin-right: 8px;
+  flex-grow: 1;
+}
+.header__search-container .search-group__container {
+  border: 0;
+  background: none;
+  padding: 0 8px 0 0;
+}
+.header__search-container:not(.header__search-container--fullwidth) .search-group__container .dl-icon {
+  order: 1;
+}
+}
